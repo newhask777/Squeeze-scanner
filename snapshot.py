@@ -7,7 +7,7 @@ with open('symbols.csv') as f:
     # print(lines)
     for symbol in lines:
         print(symbol)
-        data = yf.download(symbol, start="2022-07-20", end="2024-07-19")
+        data = yf.download(symbol, start="2024-01-01", end="2024-07-19")
         data.to_csv("datasets/{}.csv".format(symbol))
 
 
